@@ -55,7 +55,7 @@ page 50137 "Error Handling"
     [TryFunction]
     local procedure MyTryFunction()
     begin
-        // error('Ooops! an error occured');
-        // Message('treeeee');
+        // Define the code to monitor here
+        myInt:= 20/2;
     end;
 }
