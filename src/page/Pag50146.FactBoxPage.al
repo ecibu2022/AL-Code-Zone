@@ -43,6 +43,7 @@ page 50146 "FactBox Page"
 
         }
 
+// Add FactBox here
         area(FactBoxes)
         {
             part(Box; "Customer Statistics FactBox")
