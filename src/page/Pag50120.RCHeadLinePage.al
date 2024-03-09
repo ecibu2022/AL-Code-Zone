@@ -1,4 +1,4 @@
-page 50107 "RC HeadLine Page"
+page 50126 "RC HeadLine Page"
 {
     PageType = HeadlinePart;
     Caption='RC HeadLine';

@@ -3,7 +3,7 @@
 /// You need to have a table where information is going to come from
 /// </summary>
 
-table 50100 "CueTable"
+table 50108 "CueTable"
 {
     DataClassification = ToBeClassified;
 
@@ -46,7 +46,7 @@ table 50100 "CueTable"
 /// <summary>
 /// Create a page for the cues
 /// </summary>
-page 50115 "MyCustomCue"
+page 50147 "MyCustomCue"
 {
     Caption='My Approvals';
     PageType = CardPart;
