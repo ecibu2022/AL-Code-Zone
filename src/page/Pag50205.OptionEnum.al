@@ -1,9 +1,10 @@
-page 50122 "Page Example"
+page 50205 "Option & Enum"
 {
     PageType = Card;
     ApplicationArea = All;
     UsageCategory = Administration;
     // SourceTable = TableName;
+    Caption='Option and Enum';
     
     layout
     {
@@ -11,16 +12,12 @@ page 50122 "Page Example"
         {
             group(GroupName)
             {
-                field(MyDoB; MyDoB)
+                field(CustomerGender; Gender)
                 {
                     ApplicationArea = All;
-                    trigger OnValidate()
-                    begin
-                        Message('Ooops! you have entered a wrong date');
-                    end;
+                    Caption='Customer Gender';
                     
                 }
-
             }
         }
     }
@@ -38,22 +35,26 @@ page 50122 "Page Example"
                     
                 end;
             }
-        
-
-        action(PrintAction)
-        {
-            ApplicationArea = All;
-
-            trigger OnAction()
-            begin
-                // Code for ActionName2
-            end;
         }
     }
-    }
-
-
     
     var
-        MyDoB: Date;
+        Gender: Option male, female, other;
+        CallingEnum: Enum "Status Enum";
+}
+
+
+
+enum 50204 "Status Enum"
+{
+    Extensible = true;
+    
+    value(0; active)
+    {
+    }
+
+    value(1; inactive)
+    {
+    }
+    
 }
